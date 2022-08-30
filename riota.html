@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Digital Card</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<style>
+li {
+  display: inline;
+}
+.green-color {
+        color:green;
+    }
+.header{
+    display: flex;
+    padding: 5px 10px;
+    align-items: center;
+    justify-content: space-between;
+    width: 23%;
+    margin: 0 auto;
+}
+.icon{
+    display: flex;
+    padding: 5px 10px;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #e9e9e9;
+    width: 21.7%;
+    margin: 0 auto;
+} 
+.link{
+    padding: 5px 10px;
+    background-color: #e9e9e9;
+    width: 21.7%;
+    margin: 0 auto;
+    padding-top: 25px ;
+    padding-bottom: 50px ;
+}              
+.container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+</style>
+</head>
+<body>
+<div class="header">
+<center><img src="logo.png" align="center" alt="digital card" width="200"></center>
+<center><div class="container" onclick="myFunction(this)">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div></center>
+</div>
+<center><img src="riot.png" align="center" alt="digital card" width="350" height="350"></center>
+<div class="icon">
+  <a
+        href="tel:6374795004"
+        class="call"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src="call.png" width="50" height="50">
+      </a>
+  <a
+        href="https://wa.me/916374795004"
+        class="whatsapp_float"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+         <img src="wp.png" width="50" height="50">
+  </a>    
+  <a
+        href="mailto:xavierantonyamilden@gmail.com"
+        class="gmail"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src="mail.png" width="50" height="50">
+      </a>
+</div>
+<center style="height:100px;"><img src="button.png" width="350" height="100"></center>
+<div class="icon">
+  <a
+        href="https://www.facebook.com/RIOTA-Digital-103329955833855"
+        class="Facebook"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src="face.png"width="30" height="30">
+  </a>
+  <a
+        href="https://www.instagram.com/riota_digital/"
+        class="instagram"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src="ig.png" width="30" height="30">
+  </a>
+  <a
+        href="https://www.linkedin.com/company/riota-digital-marketing/"
+        class="linkedin_float"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src="tweet.png" width="30" height="25">
+  </a>
+</div>
+<div class="link"><center><a href="http://www.riotadigital.com/" target="_blank">www.riotadigital.com</a></center></div>
+<!-- <center><ul>
+<li><a
+        href="mailto:xavierantonyamilden@gmail.com"
+        class="gmail"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fa fa-envelope"></i>
+</a></li>&nbsp;&nbsp;
+<li><a
+        href="tel:6374795004"
+        class="call"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fa fa-phone"></i>
+</a></li>&nbsp;&nbsp;
+<li><a
+        href="https://wa.me/916374795004"
+        class="whatsapp_float"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fa fa-whatsapp green-color"></i>
+</a></li>&nbsp;&nbsp;
+<li><a
+        href="https://www.facebook.com/RIOTA-Digital-103329955833855"
+        class="Facebook"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fa fa-facebook-official"></i>
+</a></li>&nbsp;&nbsp; 
+<li><a
+        href="https://www.instagram.com/riota_digital/"
+        class="instagram"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fa fa-instagram"></i>
+</a></li>&nbsp;&nbsp;
+<li><a
+        href="https://www.linkedin.com/company/riota-digital-marketing/"
+        class="linkedin_float"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fa fa-linkedin"></i>
+</a></li>&nbsp;&nbsp;   
+</ul></center>
+<center><a
+         href="RiotaBrochure.pdf" download>
+         <i class="fa fa-file-pdf-o" style="font-size:25px;color:red"></i>
+</a></center><br>
+<center><a
+         href="https://online.flippingbook.com/view/369624637/">
+         <i class="fa fa-link" style="font-size:30px;color:red"></i>
+</a></center>     
+ -->
+<script>
+function myFunction(x) {
+  x.classList.toggle("change");
+}
+</script>
+</body>
+</html>
