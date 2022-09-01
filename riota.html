@@ -1,202 +1,213 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Digital Card</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<style>
-li {
-  display: inline;
-}
-.green-color {
-        color:green;
-    }
-.header{
-    display: flex;
-    padding: 5px 10px;
-    align-items: center;
-    justify-content: space-between;
-    width: 23%;
-    margin: 0 auto;
-}
-.icon1,.icon2{
-    display: flex;
-    padding: 5px 0px;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: #e9e9e9;
-    width: 23.1%;
-    margin: 0 auto;
-} 
-.link{
-    background-color: #e9e9e9;
-    width: 23.1%;
-    margin: 0 auto;
-    padding-top: 25px ;
-    padding-bottom: 50px ;
-}              
-.container {
-  display: inline-block;
-  cursor: pointer;
-}
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <title>Digital Card</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+      <style>
+        .hide {
+          display: none;
+        }
+        .show {
+          display: block;
+        }
+        li {
+          display: inline;
+        }
+        .green-color {
+          color:green;
+        }
+        .header{
+          display: flex;
+          padding: 5px 10px;
+          align-items: center;
+          justify-content: space-between;
+          width: 23%;
+          margin: 0 auto; 
+        }
+        .icon1,.icon2{
+          display: flex;
+          padding: 5px 0px;
+          align-items: center;
+          justify-content: space-evenly;
+          background-color: #e9e9e9;
+          width: 23.1%;
+          margin: 0 auto;
+        } 
+        .link{
+          background-color: #e9e9e9;
+          width: 23.1%;
+          margin: 0 auto;
+          padding-top: 25px ;
+          padding-bottom: 50px ;
+        }              
+        .container {
+          display: inline-block;
+          cursor: pointer;
+        }
 
-.bar1, .bar2, .bar3 {
-  width: 35px;
-  height: 5px;
-  background-color: #333;
-  margin: 6px 0;
-  transition: 0.4s;
-}
+        .bar1, .bar2, .bar3 {
+          width: 35px;
+          height: 5px;
+          background-color: #333;
+          margin: 6px 0;
+          transition: 0.4s;
+        }
 
-.change .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-  transform: rotate(-45deg) translate(-9px, 6px);
-}
+        .change .bar1 {
+          -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+          transform: rotate(-45deg) translate(-9px, 6px);
+        }
 
-.change .bar2 {opacity: 0;}
+        .change .bar2 {opacity: 0;}
 
-.change .bar3 {
-  -webkit-transform: rotate(45deg) translate(-8px, -8px);
-  transform: rotate(45deg) translate(-8px, -8px);
-}
-@media only screen and (max-width: 768px) {
-  .img1,.img2{
-    width: 100%;
-  }
-  .icon1,.icon2,.header,.link{
-    width: 100%;
-  }
-}
-</style>
-</head>
-<body>
-<div class="header">
-<center><img src="logo.png" align="center" alt="digital card" width="200"></center>
-<center><div class="container" onclick="myFunction(this)">
-  <div class="bar1"></div>
-  <div class="bar2"></div>
-  <div class="bar3"></div>
-</div></center>
-</div>
-<center><img src="riot.png" align="center" alt="digital card" width="350" height="350" class="img1"></center>
-<div class="icon1">
-  <a
-        href="tel:9790720398"
-        class="call"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img src="call.png" width="50" height="50">
-      </a>
-  <a
+        .change .bar3 {
+          -webkit-transform: rotate(45deg) translate(-8px, -8px);
+          transform: rotate(45deg) translate(-8px, -8px);
+        }
+        @media only screen and (max-width: 768px) {
+          .img1,.img2{
+            width: 100%;
+          }
+          .icon1,.icon2,.header,.link{
+            width: 100%;
+          }
+        }
+      </style>
+    </head>
+    <body>
+        <div class="header">
+          <center><img src="logo.png" align="center" alt="digital card" width="200"></center>
+          <center><div class="container" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div></center>
+        </div>
+        <div class="section1" id="section1">
+        <center><img src="riot.png" align="center" alt="digital card" width="350" height="350" class="img1"></center>
+        <div class="icon1">
+          <a
+          href="tel:9790720398"
+          class="call"
+          target="_blank"
+          rel="noopener noreferrer"
+          >
+          <img src="call.png" width="50" height="50">
+        </a>
+        <a
         href="https://wa.me/919790720398"
         class="whatsapp_float"
         target="_blank"
         rel="noopener noreferrer"
+        >
+        <img src="wp.png" width="50" height="50">
+      </a>    
+      <a
+      href="mailto:info@riotadigital.com"
+      class="gmail"
+      target="_blank"
+      rel="noopener noreferrer"
       >
-         <img src="wp.png" width="50" height="50">
-  </a>    
-  <a
-        href="mailto:info@riotadigital.com"
-        class="gmail"
-        target="_blank"
-        rel="noopener noreferrer"
+      <img src="mail.png" width="50" height="50">
+    </a>
+    </div>
+    <center style="height:100px;"><img src="button.png" width="350" height="100" class="img2"></center>
+    <div class="icon2">
+      <a
+      href="https://www.facebook.com/RIOTA-Digital-103329955833855"
+      class="Facebook"
+      target="_blank"
+      rel="noopener noreferrer"
       >
-        <img src="mail.png" width="50" height="50">
-      </a>
-</div>
-<center style="height:100px;"><img src="button.png" width="350" height="100" class="img2"></center>
-<div class="icon2">
-  <a
-        href="https://www.facebook.com/RIOTA-Digital-103329955833855"
-        class="Facebook"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img src="face.png"width="30" height="30">
-  </a>
-  <a
-        href="https://www.instagram.com/riota_digital/"
-        class="instagram"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img src="ig.png" width="30" height="30">
-  </a>
-  <a
-        href="https://twitter.com/riota_digital"
-        class="twitter_float"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img src="tweet.png" width="30" height="25">
-  </a>
-</div>
-<div class="link"><center><a href="http://www.riotadigital.com/" target="_blank">www.riotadigital.com</a></center></div>
-<!-- <center><ul>
-<li><a
-        href="mailto:xavierantonyamilden@gmail.com"
-        class="gmail"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <i class="fa fa-envelope"></i>
-</a></li>&nbsp;&nbsp;
-<li><a
-        href="tel:6374795004"
-        class="call"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <i class="fa fa-phone"></i>
-</a></li>&nbsp;&nbsp;
-<li><a
-        href="https://wa.me/916374795004"
-        class="whatsapp_float"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <i class="fa fa-whatsapp green-color"></i>
-</a></li>&nbsp;&nbsp;
-<li><a
-        href="https://www.facebook.com/RIOTA-Digital-103329955833855"
-        class="Facebook"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <i class="fa fa-facebook-official"></i>
-</a></li>&nbsp;&nbsp; 
-<li><a
-        href="https://www.instagram.com/riota_digital/"
-        class="instagram"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <i class="fa fa-instagram"></i>
-</a></li>&nbsp;&nbsp;
-<li><a
-        href="https://www.linkedin.com/company/riota-digital-marketing/"
-        class="linkedin_float"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <i class="fa fa-linkedin"></i>
-</a></li>&nbsp;&nbsp;   
-</ul></center>
-<center><a
-         href="RiotaBrochure.pdf" download>
-         <i class="fa fa-file-pdf-o" style="font-size:25px;color:red"></i>
-</a></center><br>
-<center><a
-         href="https://online.flippingbook.com/view/369624637/">
-         <i class="fa fa-link" style="font-size:30px;color:red"></i>
-</a></center>     
- -->
-<script>
-function myFunction(x) {
-  x.classList.toggle("change");
-}
-</script>
-</body>
-</html>
+      <img src="face.png"width="30" height="30">
+    </a>
+    <a
+    href="https://www.instagram.com/riota_digital/"
+    class="instagram"
+    target="_blank"
+    rel="noopener noreferrer"
+    >
+    <img src="ig.png" width="30" height="30">
+    </a>
+    <a
+    href="https://twitter.com/riota_digital"
+    class="twitter_float"
+    target="_blank"
+    rel="noopener noreferrer"
+    >
+    <img src="tweet.png" width="30" height="25">
+    </a>
+    </div>
+    <div class="link"><center><a href="http://www.riotadigital.com/" target="_blank">www.riotadigital.com</a></center></div>
+      </div>
+    <div class="map hide" id="map">
+      <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.293967973424!2d80.19494331474147!3d13.080546490784494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526402be882bef%3A0xad2f3f45016d6710!2sVR%20Chennai!5e0!3m2!1sen!2sin!4v1662014141324!5m2!1sen!2sin" width="350" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></center>
+    </div>
+    <div class="youtube hide" id="youtube">
+      <center><iframe width="350" height="315" src="https://www.youtube.com/embed/o5wVDbpioBI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+    </div>  
+    <div class="flipbook hide" id="flipbook">
+      <center><iframe src="https://online.flippingbook.com/view/369624637/" width="350" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></center>
+    </div>
+    <div class="section2" id="section2">
+    <div class="icon2">
+    <a>
+    <img src="bot1.png"width="70" height="50" onclick="home()">
+    </a>
+    <a>
+    <img src="bot2.png" width="70" height="50" onclick="loc()">
+    </a>
+    <a>
+    <img src="bot3.png" width="70" height="50" onclick="you()">
+    </a>
+    <a>
+    <img src="bot4.png" width="70" height="50" onclick="flip()">
+    </a>
+    <a><img src="bot5.png" width="70" height="50"></a>
+    </div>
+  </div>
+    <script>
+      function myFunction(x) {
+        x.classList.toggle("change");
+      }
+      function home() {
+         document.getElementById("youtube").classList.remove("show");
+         document.getElementById("map").classList.remove("show");
+         document.getElementById("flipbook").classList.remove("show");
+         document.getElementById("youtube").classList.add("hide");
+         document.getElementById("map").classList.add("hide");
+         document.getElementById("flipbook").classList.add("hide");
+         document.getElementById("section1").classList.add("show");   
+           }
+      function loc() {
+         document.getElementById("youtube").classList.remove("show");
+         document.getElementById("section1").classList.remove("show");
+         document.getElementById("flipbook").classList.remove("show");
+         document.getElementById("youtube").classList.add("hide");
+         document.getElementById("section1").classList.add("hide");
+         document.getElementById("flipbook").classList.add("hide");
+         document.getElementById("map").classList.add("show");   
+           }
+      function you() {
+         document.getElementById("map").classList.remove("show");
+         document.getElementById("section1").classList.remove("show");
+         document.getElementById("flipbook").classList.remove("show");
+         document.getElementById("map").classList.add("hide");
+         document.getElementById("section1").classList.add("hide");
+         document.getElementById("flipbook").classList.add("hide");
+         document.getElementById("youtube").classList.add("show");   
+           }
+      function flip() {
+         document.getElementById("map").classList.remove("show");
+         document.getElementById("section1").classList.remove("show");
+         document.getElementById("youtube").classList.remove("show");
+         document.getElementById("map").classList.add("hide");
+         document.getElementById("section1").classList.add("hide");
+         document.getElementById("youtube").classList.add("hide");
+         document.getElementById("flipbook").classList.add("show");   
+           }         
+    </script>
+    </body>
+    </html>
